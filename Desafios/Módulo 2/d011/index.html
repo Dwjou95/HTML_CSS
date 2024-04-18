@@ -7,31 +7,32 @@
     <title>Desafio do Astronauta</title>
     <style>
         body {
+            position: relative;
             height: 100vh;
             background-color: black;
             background-image: url(_imagens/espaco.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: auto;
-            background-attachment: fixed;
+            background-size: cover;
         }
 
-        div#q1 {
-            height: 100vh;
-            background-image: url(_imagens/astronauta.png);
-            background-size: 500px;
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-attachment: fixed;
+        main {
+            background-size: 100% 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
         }
     </style>
 
 </head>
 
 <body>
-    <div class="astronauta" id="q1">
+    <main>
+        <img src="_imagens/astronauta.png" alt="astronauta">
+    </main>
 
-    </div>
 
 
 </body>
